@@ -18,14 +18,17 @@ $imgHovBorder: 3px;
     margin-bottom: 41px;
   }
   &__product-image {
+    box-sizing: content-box;
     width: 160px;
     height: 134px;
     object-fit: fill;
-    // border: 3px solid transparent;
+    border: 3px solid transparent;
     transition: scale 400ms;
+    transition-property: scale, transform;
     margin: 0;
     padding: 0;
     &:hover {
+      transform: translatey(-29px + 26.8 / 2 + 3);
       border-color: #f3f3f3;
       scale: 120%;
     }
@@ -71,7 +74,7 @@ $imgHovBorder: 3px;
     border-radius: 5px;
     border: 1px solid $moyo-color;
 
-    transition: color 100ms;
+    transition: color 150ms;
     &:hover {
       color: $moyo-color;
       background: #fff;
