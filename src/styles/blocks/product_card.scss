@@ -23,14 +23,12 @@ $imgHovBorder: 3px;
     height: 134px;
     object-fit: fill;
     border: 3px solid transparent;
-    transition: scale 400ms;
-    transition-property: scale, transform;
+    transition: transform 400ms;
     margin: 0;
     padding: 0;
     &:hover {
-      transform: translatey(-29px + 26.8 / 2 + 3);
+      transform: translatey(-29px + 26.8 / 2 + 3) scale(120%);
       border-color: #f3f3f3;
-      scale: 120%;
     }
   }
   &__device-name {
