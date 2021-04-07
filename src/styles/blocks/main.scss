@@ -1,6 +1,7 @@
 .main {
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
   gap: 50px $cards-gap;
   margin: 0 auto;
   max-width: $card-width * 4 + $cards-gap * 8;
