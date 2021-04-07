@@ -1,12 +1,8 @@
 .main {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 50px $cards-gap;
   margin: 0 auto;
-  max-width: $card-width * 4 + $card-hor-margin * 8;
-
-  &__card {
-    margin: 0 $card-hor-margin 49px;
-    
-  }
+  max-width: $card-width * 4 + $cards-gap * 8;
 }
