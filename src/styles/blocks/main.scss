@@ -1,12 +1,7 @@
 .main {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: $cards-gap;
   margin: 0 auto;
-  max-width: $card-width * 4 + $card-hor-margin * 8;
-
-  &__card {
-    margin: 0 $card-hor-margin 49px;
-    
-  }
+  max-width: $card-width * 4 + $cards-gap * 8;
 }
